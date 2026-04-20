@@ -3,10 +3,10 @@ from fastapi import FastAPI
 from ray import serve
 from ray.serve.handle import DeploymentHandle
 
-from schema import PredictRequest, PredictResponse
+from app.schema import PredictRequest, PredictResponse
 
-from ai_service import BertNewsClassifier
-from preprocessor import TextPreprocessor
+from app.ai_service import BertNewsClassifier
+from app.preprocessor import TextPreprocessor
 
 
 app = FastAPI()

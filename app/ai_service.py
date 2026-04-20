@@ -1,11 +1,11 @@
 from ray import serve
 
-from transformers import BertForSequenceClassification, BatchEncoding
+from transformers import BertForSequenceClassification
 
 import torch
 from torch import nn
 
-from schema import PredictResponse
+from app.schema import PredictResponse
 
 @serve.deployment(
     num_replicas=1,

@@ -1,7 +1,5 @@
-from transformers import BertTokenizer, BatchEncoding
+from transformers import BertTokenizer
 from ray import serve
-
-from torch.utils.data import DataLoader
 
 import re
 
