@@ -1,0 +1,24 @@
+# --- Python & OS ---
+__pycache__/
+*.py[cod]
+*$py.class
+.DS_Store
+.python-version
+
+# --- IDE (누락됨) ---
+.vscode/
+.idea/
+
+# --- Environment & Tooling ---
+.venv/
+.ray/
+node_modules/
+
+# --- Data & Notebooks (실험 기록은 제외하는 것이 깔끔함) ---
+data/
+.ipynb_checkpoints/
+
+# --- Model Weights (중요) ---
+# BERT 모델(.pth)은 파일당 수백 MB이므로 Git LFS를 안 쓴다면 무조건 제외 권장
+# 굳이 올리고 싶다면 한 개만 명시적으로 허용하거나 용량 확인 필수
+models/bert/*.pth

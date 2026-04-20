@@ -1,0 +1,20 @@
+# 로컬 가상환경 (절대 포함 금지 - 도커 안에서 새로 설치함)
+.venv/
+
+# 소스 제어 및 설정
+.git/
+.gitignore
+.dockerignore
+Dockerfile
+
+# 캐시 및 임시 파일
+__pycache__/
+.ipynb_checkpoints/
+.vscode/
+
+# 실험 및 문서
+design_note.ipynb
+README.md
+
+# 데이터 (테스트용 샘플이 너무 크다면 제외)
+data/
